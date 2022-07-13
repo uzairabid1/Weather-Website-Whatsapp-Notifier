@@ -1,0 +1,308 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+label{
+    display: flex;
+    color: #212529;
+}
+
+
+.input-group{
+    display:flex;
+    height: fit-content;
+    width: fit-content;
+}
+#form{
+    display: flex;
+    padding: 50px;
+}
+#submit{
+    padding: 8px;
+    height: fit-content;
+    position: inherit;
+}
+body{
+    background-image: url('bg9.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+   
+    overflow: hidden;
+    height: 100vh;
+    
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    padding: 20px 70px;
+    color: #212529;
+}
+.current-info{
+    color:gainsboro;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.date_container{
+    font-weight: 50;
+}
+.date_container #time{
+font-size: 70px;
+
+color: rgba(219, 209, 245, 0.671);
+}
+.date_container #span-time{
+    font-size: 25px;
+    margin-left: 12px;
+}
+.date_container .date{
+    font-size: 30px;
+}
+.place_container{
+text-align: end;
+
+}
+.btn-primary{
+    font-size: 15px;
+
+}
+.place_container .time-zone{
+    
+    font-size: 25px;
+    font-weight: 50;
+    margin-top: 10px;
+}
+.place_container .input-group{
+    margin-top: 15px;
+}
+.place_container #search{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.place_container .search-btn{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+
+}
+.place_container .search-btn:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    background: rgb(15, 80, 219);
+    color: #eee;
+}
+.modal-body #Name-label{
+    display: flex;
+    color: #212529;
+}
+.modal-body #phno-label{
+    display: flex;
+    color: #212529;
+}
+.place_container #country{
+    font-size: 12px;
+    font-weight: 700;
+}
+.place_container .search-day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.place_container .search-day .day{
+    padding: 5px 10px;
+    background: rgba(48, 48, 56, 0.719);
+    border:1px solid #eee;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+.place_container .search-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 10px;
+
+}
+.current-info .others{
+    display: flex ;
+    flex-direction: column;
+    background: rgba(48, 48, 56, 0.719);
+    padding: 15px;
+    border-radius: 12px;
+    margin: 10px 0;
+    border:1px solid #eee;
+
+}
+.current-info .others .weather-item{
+    display: flex;
+    justify-content: space-between;
+}
+.future-forecast{
+    background: rgba(48, 48, 56, 0.719);
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color:#eee;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.future-forecast .weather-forecast{
+    display: flex;
+}
+.future-forecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.future-forecast .today .day{
+    padding: 5px 10px;
+    background: rgba(48, 48, 56, 0.719);
+    border:1px solid #eee;
+    border-radius: 50px;
+    text-align: center;
+}
+.future-forecast .today .temp{
+    font-size: 18px;
+    padding-top:15px;
+}
+.future-forecast .weather-forecast{
+    display: flex;
+}
+.weather-forecast .weather-forecast-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+    border:1px solid #eee;
+    border-radius: 12px;
+    padding: 10px; 
+
+}
+.weather-forecast .weather-forecast-item .day{
+    padding: 5px 10px;
+    background: rgba(48, 48, 56, 0.719);
+    border:1px solid #eee;
+    border-radius: 50px;
+    text-align: center;
+
+}
+.modal {
+    position: fixed;
+    top: 125px;   
+    left: 0; 
+    z-index: 1055;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+.modal-title{
+    color:black;
+}
+.weather-forecast .weather-forecast-item .temp{
+    font-weight: lighter;
+    color: rgba(202, 200, 200, 0.76);
+}
+@media only screen and (max-width:900px) {
+    .container{
+        padding: 20px;
+    }
+.future-forecast{
+    justify-content: start;
+    align-items: center;
+    overflow-y: scroll;
+}
+.future-forecast .today .temp{
+    font-size: 19px;
+}
+label{
+    display: flex;
+    color: #212529;
+}
+.modal-body #Name-label{
+    display: flex;
+    color: #212529;
+}
+.modal-body #phno-label{
+    display: flex;
+    color: #212529;
+}
+.date_container #time{
+    font-size: 40px;
+}
+.date_container #span-time{
+    font-size: 17px;
+    margin-left: 7px;
+}
+.date_container .date{
+    font-size: 16px;
+}
+.modal {
+    position:absolute;
+    top: 74px;
+    left: 0;
+    z-index: 1055;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+.modal-title{
+    color:black;
+}
+.text-muted{
+    color: black;
+
+}
+.place_container{
+    text-align: end;
+    margin-top: 12px;
+}
+.place_container .time-zone{
+    font-size: 20px;
+    margin-top: 6px
+}
+.place_container .input-group{
+    margin-top: 20px;
+}
+.place_container #search{
+    font-size: 10px;
+}
+.place_container .search-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+.place_container .search-btn{
+    font-size: 10px;
+}
+.current-info .others{
+    padding: 12px;
+}
+.current-info .others .weather-item{
+    font-size: 14px;
+}
+    
+}
+
+@media only screen and (max-width: 1000px){
+    .future-forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+    }
+}
